@@ -1,5 +1,6 @@
 let mongoose = require("mongoose");
 let db = require("../models");
+const date = new Date();
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
@@ -8,7 +9,7 @@ mongoose.connect("mongodb://localhost/workout", {
 
 let workoutSeed = [
   {
-    day: new Date().setDate(new Date().getDate()-10),
+    day: date.setDate(date.getDate()-10),
     exercises: [
       {
         type: "resistance",
@@ -21,7 +22,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-9),
+    day: date.setDate(date.getDate()-9),
     exercises: [
       {
         type: "resistance",
@@ -34,7 +35,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-8),
+    day: date.setDate(date.getDate()-8),
     exercises: [
       {
         type: "resistance",
@@ -47,7 +48,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-7),
+    day: date.setDate(date.getDate()-7),
     exercises: [
       {
         type: "cardio",
@@ -58,7 +59,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-6),
+    day: date.setDate(date.getDate()-6),
     exercises: [
       {
         type: "resistance",
@@ -71,7 +72,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date().setDate(new Date().getDate()-5),
+    day: date.setDate(date.getDate()-5),
     exercises: [
       {
         type: "resistance",
@@ -84,7 +85,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 4)),
+    day: date.setDate(date.getDate() - 4),
     exercises: [
       {
         type: "resistance",
@@ -97,7 +98,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 3)),
+    day: date.setDate(date.getDate() - 3),
     exercises: [
       {
         type: "resistance",
@@ -110,7 +111,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(new Date().setDate(new Date().getDate() - 2)),
+    day: date.setDate(date.getDate() - 2),
     exercises: [
       {
         type: "resistance",
